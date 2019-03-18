@@ -1,0 +1,206 @@
+\documentclass[12pt,a4paper]{article}
+%
+\usepackage{graphicx}
+\usepackage{helvet}
+
+\usepackage{parskip}% http://ctan.org/pkg/parskip
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\PassOptionsToPackage{hyphens}{url}\usepackage{hyperref}
+\usepackage{apacite}
+
+\pagestyle{fancyplain}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0.5pt}
+\renewcommand{\footrulewidth}{0.5pt}
+\setlength{\headheight}{15pt}
+\fancyhead[L]{}
+\fancyhead[R]{}
+\fancyfoot[R]{INF10101}
+\fancyfoot[L]{40200819}
+\fancyfoot[C]{\thepage}
+
+\renewcommand{\familydefault}{\sfdefault}
+\linespread{1.5}
+% Used for displaying a sample figure. If possible, figure files should
+% be included in EPS format.
+%
+% If you use the hyperref package, please uncomment the following line
+% to display URLs in blue roman font according to Springer's eBook style:
+% \renewcommand\UrlFont{\color{blue}\rmfamily}
+
+%\makeatletter
+%\renewcommand\subsection{\@startsection {subsection}{1}{2mm} % name, level, indent
+%                               {3pt plus 2pt minus 1pt} % before skip
+%                               {3pt plus 0pt} % after skip
+%                               {\normalfont\bfseries}}
+%\makeatother
+%\makeatletter
+%\renewcommand\section{\@startsection {section}{1}{0mm} % name, level, indent
+%                               {4pt plus 2pt minus 1pt} % before skip
+%                               {4pt plus 0pt} % after skip
+%                               {\bfseries}}
+%\makeatother
+
+
+
+\begin{document}
+\pagenumbering{Roman}
+%
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+
+\begin{titlepage}
+	\begin{center}
+
+	\HRule \\[0.4cm]
+    	{\Large \bfseries INF10101 - Society Coursework\par}
+	\vspace{0.2cm}
+	\HRule \\[1.5cm]
+
+	
+    	\vspace{1cm}
+	\begin{minipage}{0.8\textwidth}
+	\begin{center} \large
+        David Frame - 40200819
+        	
+				
+   	 \end{center}
+    	\end{minipage}
+	
+    	\begin{minipage}{1\textwidth}
+    	\begin{center} \large
+        
+		Computing Science
+    	\end{center}
+    	\end{minipage}
+    	
+    \vspace{2cm}
+    \begin{minipage}{0.8\textwidth}
+	\begin{center} \large
+        \emph{Word Count: 2197 words}
+        	
+				
+   	 \end{center}
+    	\end{minipage}
+	
+	
+
+    	\vfill
+
+    	% Bottom of the page
+	\begin{minipage}{1\textwidth}
+    	\begin{center} \large
+		School of Computing
+    	\end{center}
+    	\end{minipage}
+	
+	\vspace{1cm}
+    	{\large \today}
+
+
+	\end{center}
+\end{titlepage}
+
+\begin{abstract}
+\noindent
+The aim of this report is to explore the ethical and legal implications of IT. Section two discusses the ethical options available to two people in similar circumstances, but with differing goals. It also suggests which ethical perspective each person is most likely to have. Section three asks whether the introduction of a new system to access work anywhere could have an impact on the work life balance of employees. This includes a discussion on the benefits of having access to work everywhere, such as being able to work from home to support a young family. Section four suggests an IT solution for the administrators of a mental health support team who are struggling with their workload. The solution takes the GDPR and DPA 2018 into account by proposing the technologies that should be used. It also explains relevant rules and principles to follow, such as requiring consent from patients to process data. Section five discusses the advantages and disadvantages of hiring an IT professional for someone who is heavily reliant on volunteers. It finds that an IT professional is preferable to asking a volunteer so long as they have the necessary skills, which could be ensured by hiring a member of a professional body such as the BCS.
+The report as a whole concludes that IT has a major impact on the lives of data subjects and anyone interacting with it, and should therefore be taken seriously - perhaps necessitating the hiring of accredited professionals from bodies such as the BCS and IEEE.
+
+\end{abstract}
+\newpage
+
+\tableofcontents
+
+\newpage
+
+\pagenumbering{arabic}
+\section{Introduction}
+This report is based on a fictional scenario about Forthview Hub, a community health centre split into Dochart House and Tummel House. It discusses the ethical and legal impacts of IT within the centre, including the implications of ethics, working from home, legislation and professionalism.
+
+\section{Comparing and contrasting the ethical perspectives of Lynne and George}
+
+Lynne and George have a similar situation to which they must apply ethical judgements and actions. Both want to advertise something to a target audience, but for different reasons, which makes their ethics similar in execution but with a different intended outcome.\\
+
+%In order to stand up to the law, and by extension rule based ethics, both must get consent to use customer/visitor data for marketing purposes, and only market things that are relevant to them. In addition, if Lynne intends to use NHS data to work out who is pregnant, she would need access to it through her role in the maternity unit (scenario, para 8).\\
+
+%George may also need parental permission to market to his younger "primary-age" (scenario, para 25) clients, as the UK GDPR regulations state that the minimum age of consent without parental permission is 13 \cite{consentGDPR}.\\
+
+Lynne has good intentions with her initiative to advertise the breastfeeding support group (scenario, para 8), however using social media to attract new clients may propose some ethical challenges. For example, if the mother hadn't made her pregnancy public yet, the advertisement may expose it before she is ready, or to people who she wouldn't have told herself. Therefore, awareness of the target audience would be required when advertising. Alternatively, Lynne could use a non-targeted advertising style such as a publicly available social media account to avoid any misunderstandings. \\
+
+Even if Lynne could legally use patient data for marketing purposes, she may still directly target the expectant mothers without much consideration for their privacy. This would be exploitative and in her interest more than the mothers, making her an egoist \cite{Egoism}. Similarly, if George had an egoist perspective, he would directly market to all parties (scenario, para 27) without considering their consent, to make as much money as possible in order to advance his own career. While both egoist approaches could be viewed as aggressive, Lynne still ultimately aims to help people, as opposed to George who is driven by monetary gain.\\
+
+To be altruistic, you must sacrifice something yourself for the benefit of others \cite{Altruism}. In Lynne's case, she would go against her wish to direct social media posts at individuals so that she isn't risking their privacy, although she could still operate an account for mothers to find on their own. If George were being altruistic, he would ignore the monetary potential and not market to his customers as that is in their best interest. Like Lynne, he may market to them indirectly if he genuinely believes they could benefit from it. The cases differ as marketing would be obnoxious to George's clients in most cases, but the breastfeeding support group could be genuinely helpful for expectant mothers.\\
+
+If Lynne were to take a utilitarian approach, she would try to maximise the happiness of everyone, including herself \cite{Utilitarianism}. Therefore, she would be measured with her use of social media, making sure to respect the privacy of users whilst also advertising to relevant people. If George was a utilitarian, he would market to others with their permission and make it easy for them to opt out. He wouldn't require signing up to the marketing to use the facilities. Lynne and George are pretty similar in this case as they would both be advertising with permission, though Lynne's case could be considered more wholesome.\\
+
+With a deontological perspective, Lynne would do what she perceives to be the right thing without considering the consequences \cite{Deontology}. In this case, she really wants to support expecting mothers, so she would probably take the risk and use social media despite potential consequences. Conversely, George would probably not do any marketing as it is only for his own benefit and isn't valuable for most people - even if it impacts his future career.\\
+
+After reviewing these different approaches and what they would entail for Lynne, it appears that a utilitarian perspective would match her ideology best as she genuinely wants to help people - fully indirect marketing or too much marketing doesn't make sense for her. As for George, he is most likely an egoist due to his lofty career goals, which may not be as achievable with other approaches.
+
+\section{Potential benefits and harmful impacts of working from home using the Vision system}
+
+Some staff at Forthview surgery, namely Dr Holloway and Dr Wells, are struggling to keep up with their work due to personal commitments such as looking after young children (scenario, para 13). This section discusses whether Ben Sutherland's trial of 'Vision', a service that allows off-site access to the patient records, could be a solution to this problem, with consideration for the work-life balance of surgery staff.\\
+
+Having constant access to work email on a personal device can be disruptive to family life, but some find it to be an acceptable trade-off to allow them to complete their work in their own time \cite{mobileoverload}. A similar principle may apply to the Vision system as it will be helpful to the doctors that need extra time with the data to complete their work, but it could also have a detrimental impact on doctors who want to keep their personal lives separate from their job.\\
+
+It could be argued that the Microsoft remote desktop client solution (scenario, para 21) is already available from home, so a new system wouldn't have much more of an impact - though this depends on the convenience of the new system. If it works without PCs being left on (scenario, para 21) and can be accessed on their mobile phone, it may be more accessible and therefore harder to avoid.\\
+
+Issues could also arise from the nature of the data being transmitted as any data from the surgery is likely to be special category under GDPR. The doctors would need to be careful with their mobile devices in public, or if they share them with others. They would be in violation of their code of conduct if a third party saw confidential information, which may cost them their job \cite{GMC}.\\
+
+Whilst use of the system would be optional, doctors may be forced into using it to keep up with their peers, especially if they want promotions and other bonuses. The system could also put doctors that don't have access to suitable smart devices at an unfair disadvantage, so the surgery may need to provide devices themselves. These devices could also help separate the data away from potentially insecure personal devices, but would drive up the cost of the system substantially.\\ 
+
+In addition to this, overworking is increasingly commonplace in the NHS \cite{overwork}, so the surgery may take advantage of the Vision system to overwork their doctors outside of paid hours.\\
+
+On the positive side, the system allows for extra options, such as flexible hours and the opportunity to do admin work anywhere. For example, if a doctor was visiting a different clinic, they could work on admin while taking public transport, or while waiting to treat their patient. This flexibility could help the surgery relieve its workload significantly.\\
+
+Overall, it appears that the Vision system could have some major benefits for the staff at Forthview Surgery. There are some downsides such as the potential for overworking, but if the surgery manages the system effectively and treats employees who don't want to use it equally, it should be a helpful option for them.
+
+\section{Creating an IT solution within the restrictions of GDPR and DPA 2018}
+
+An IT based solution could ease up the workload for the admin team's members, which is currently 'almost unbearable' (scenario, para 6). Therefore, Tom has a good incentive to collect and process the patient data, which is one of the principles of collecting personal data under GDPR law \cite{Article5}.\\ 
+
+Article 5 also covers the importance of securing data and protecting against accidental data loss. Thankfully the physical security of the building is already quite good (scenario, para 3). A WiFi network could be accessed from outside or from the community cafe, so this solution proposes that they use the building's Ethernet connection instead. If this was done, someone would need physical access to an Ethernet port to get into it.\\
+
+These measures would help to prevent local unauthorised access, but the data could still be vulnerable from remote locations. If a breach does happen, they should have a plan in place that follows GDPR regulations - informing the IPO and any affected patients (if the breach poses a threat to them) within 72 hours of becoming aware of it \cite{Article33&34}.\\
+
+"The main threat to the confidentiality of clinical records is carelessness about telephone inquiries" \cite{ClinicalSystemSecurity}, therefore the proposed system avoids telephone communication, in favour of email and the SCI. This has the added benefit of leaving a digital record of all referrals and other interactions as required \cite{Article30}.\\
+
+The SCI system should be used for data transfer between clinics, and email for communication with organisations outside of the NHS such as the courts and social workers (scenario, para 5). If email referrals were written in a specific template, they could be processed automatically (in a similar way to this patent \cite{AutoProcess}), and could immediately update the required patient health records (scenario, para 6) to reduce the workload of the administrators.\\
+
+The team would need to find an appropriate email provider with ample security, including encryption of all emails as required for special category data \cite{Article32}. Patients would also need to give consent for their data to be processed by the administrators \cite{Article9}.\\
+
+As the team is dealing with special category data, it may need a DPO depending on the scale of the data processing \cite{Article37}. Among other things, the DPO would be responsible for training staff who have frequent access to personal data on the importance of GDPR and the legal implications of mistakes and negligence \cite{Article39&47}.\\
+%It may be desirable to use standard training programmes created by the appropriate board, if they are available \cite{Article70} - particularly if clinics that they work with also use them.\\
+
+It may be helpful to have a database linked to the SCI similar to the one used by Alzheimer Scotland (scenario, para 7) so that the medical centre can keep records digitally instead of relying on paper copies. This database must have the ability to delete records to facilitate the right to be forgotten \cite{Article17}. Similarly, the data must not be stored for longer than necessary \cite{Article5}. It must also be possible to restore data in the case of an error \cite{Article32}.\\
+
+%All of these powers should be made clear and easily accessible to the data subject through the use of standardised icons and plain English, the system should also tell the data subject about their right to complain to the IPO should their request not be fulfilled in time \cite{Article12}.\\
+
+Finally, as the team is a data controller, they will need a contract with any NHS facilities (data processors) that they send personal data to \cite{Article28}.
+
+\section{Advantages and disadvantages of paying an IT professional for software development}
+
+Silvia would benefit from a system that allows her to digitise her rota and stock control (scenario, para 12), and knows a volunteer who is "good at computers". This section discusses the advantages and disadvantages of paying an IT professional, and whether it is worth the cost over asking the volunteer.\\
+
+Starting with disadvantages, an IT professional could cost a lot of money based on their experience and the scale of the project. Silvia is currently heavily reliant on volunteers, so she may not have enough money to pay for an IT professional.\\
+
+Another issue is the lack of clarity around the term 'IT professional'. It covers a very wide range of skills and anyone can call themselves an IT Professional as it is not a protected profession \cite{ITProfessionalism}. This makes hiring an IT professional more complex as Silvia would need to find someone who has the appropriate skills and conducts themselves professionally.\\
+
+On the other hand, any 'IT Professional' would be more likely to have the necessary skills over a volunteer who is 'good at computers', as that could mean anything from a blogger to a games designer, with no guarantee that they have any related skills.\\
+
+Asking someone to build an entire system for free could be viewed as exploitative, which may be another reason to pay an IT professional, depending on Silvia's viewpoint \cite{exploitativeVolunteering}. Silvia and the volunteer would need to plan the system before trying to build it, so that they could evaluate the amount of work and time required.\\
+
+This wouldn't be an issue for an IT professional, who would be able to give a quote for the amount of money and time necessary. The professional quality of their work would also result in a more reliable system, potentially reducing the maintenance costs in the future - this is important as maintenance is often the most expensive part of software development \cite{maintenanceCost}.\\
+
+The BCS requires knowledge of legislation \cite{BCS}, so Silvia may want to look for someone with BCS accreditation to ensure that her system is developed correctly and ethically - which may lead to paying a higher salary \cite{BCSBenefits}. There would be many advantages to this, as the BCS ensures high moral standards with particular regard to public interest, an essential quality for someone working in the health sector. Also, a BCS member must only accept projects within their professional competence, which would provide reassurance that the project will be completed on time and within budget.\\
+
+To conclude, if Silvia can afford to pay for a BCS charted IT Professional to complete the job, she is likely to get a reliable system in the timeframe quoted. On the other hand, if money prevents this possibility, she could ask the volunteer so long as they understood the time, skills and moral outlook they would need to complete the task.
+
+\section{Conclusion}
+There are many ways that IT can impact people's lives, in both good and bad ways. Therefore it is important to consider all aspects when making decisions, such as who will be impacted and in what way. The various legal implications of IT must also be carefully navigated, especially when dealing with personal data. These issues can be difficult to manage, but finding a charted IT professional can help as they must follow a code of conduct, which helps to ensure that they create and operate systems ethically and within the law.
+
+\bibliographystyle{apacite}
+\bibliography{Bibliography}
+
+\end{document}
